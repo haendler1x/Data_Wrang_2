@@ -42,7 +42,7 @@ for(i in 1:nrow(titanic)){
 }
 
 
-
+titanic$has_cabin_number <- c()
  for(i in 1:nrow(titanic)){
    if (is.na(titanic$cabin[i]) == TRUE){
      titanic$has_cabin_number[i] <- "0"
